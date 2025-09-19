@@ -1,1 +1,1 @@
-# Promo-o-Yamase
+Hello, this is a simple HTML code created for a company. Its main purpose is to develop a webpage dedicated to showcasing the company's current promotions and special offers. This page aims to enhance customer engagement by providing easy access to the latest deals.
