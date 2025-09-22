@@ -5,36 +5,71 @@
   <title>Produtos em promoção Yamase</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
 </head>
 <body>
   <img src="banner-yamase.png.png" alt="Banner ML Yamase" class="banner">
   <h1>Produtos em promoção ML Yamase</h1>
-  <ul>
-    <li><a href="https://www.mercadolivre.com.br/kit-limpeza-automotiva-vexus-v-floc-intense-sintra-vonixx/p/MLB35104832?pdp_filters=item_id:MLB4998050432" target="_blank">Kit Vexus Sintra Fast Intense V-floc 500ml</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-1466286102-selante-revitaliza-black-piano-tira-riscos-v80-aplicador-_JM" target="_blank">V-80 500ml - Últimas Unidades</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-1787235766-bactran-produto-para-limpar-banco-carro-tira-manchas-vonixx-_JM" target="_blank">Bactran 1,5L</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-4140667680-kit-prizm-shampoo-v-floc-restaurax-sintra-fast-pincel-vonixx-_JM" target="_blank">Kit V-floc Restaurax Prizm Sintra Fast 500ml</a></li>
-    <li><a href="https://www.mercadolivre.com.br/kit-limpa-vidros-vonixx-500ml-limpa-desengordura-desembaca/p/MLB46271431?pdp_filters=item_id:MLB3641796913" target="_blank">Limpa Vidros + Pano De Vidro</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-3786324705-luva-automotiva-para-lavagem-esfregaco-dub-boyz-_JM" target="_blank">Luva Automotiva Dub Boyz</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-4007204323-hidratante-couro-courino-cura-dettagli-pano-aplicador-vonixx-_JM" target="_blank">Cura 500ml Dettagli</a></li>
-    <li><a href="https://www.mercadolivre.com.br/revitalizador-de-pneu-visco-automotivo-1-litro-cadillac-cor-preto/p/MLB43327671?pdp_filters=item_id:MLB5181163280" target="_blank">Pneu Visco 1L Cadillac</a></li>
-    <li><a href="https://www.mercadolivre.com.br/shampoo-camaleo-nobrecar-1400-viper-limpador-pneu-pano/p/MLB47893437?pdp_filters=item_id:MLB5349290952" target="_blank">Kit Camaleão 1L Viper 500ml Nobrecar</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-5286740290-kit-limpa-pneu-rodas-d-ret-iron-skunk-dub-boyz-escova-pincel-_JM" target="_blank">Kit Iron Skunk D-ret 500ml</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-1236571983-cera-automotiva-vitrificadora-blend-vonixx-carnauba-silica-_JM" target="_blank">Blend Paste Wax 100g</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-5534314828-pneu-pretinho-minux-maquiador-para-pneus-500ml-zacs-_JM" target="_blank">Minux 500ml Aplicador De Pretinho</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-2631377286-cross-mol-finisher-shampoo-automotivo-limpeza-pesada-5l-_JM" target="_blank">Cross Mol 5L - Finisher</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-2632778522-3-pneu-preto-finisher-pretinho-abrilhantador-500g-_JM" target="_blank">Pneu Pretinho 500ml - Finisher</a></li>
-    <li><a href="https://www.mercadolivre.com.br/limpa-pneu-delet-500ml-irontech-descontaminante-easytech/p/MLB48232829?pdp_filters=item_id:MLB5350865496" target="_blank">Delet Iron tech 500ml</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-1744516070-balde-com-separador-de-particulas-lavagem-automotiva-mandala-_JM" target="_blank">Balde Com Separador De Partículas</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-3964658313-lubrificante-700ml-clay-bar-300g-finisher-pano-detailer-_JM" target="_blank">Lubrificante de Clay Bar 700ml Barra Limpadora 300g</a></li>
-    <li><a href="https://www.mercadolivre.com.br/shampoo-desincrustante-d-off-alcalino-15l-dub-boyz/p/MLB39977262?pdp_filters=item_id:MLB5030281942" target="_blank">D-off 1,5L Dub Boyz</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-3775748549-escova-furo-de-rodas-tipo-pepino-detalhamento-automotivo-_JM" target="_blank">Escova Furo De Rodas Vonder</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-3037277634-kit-profissional-produto-limpeza-lava-seco-automotivo-vonixx-_JM" target="_blank">Kit Sintra Fast V-eco Blend Spray Intense 500ml Vonixx</a></li>
-    <li><a href="https://produto.mercadolivre.com.br/MLB-5294058486-kit-desengraxante-demolidor-cadillac-izer-500ml-vonixx-_JM" target="_blank">Demolidor 1,5L Izer 500ml</a></li>
-  </ul>
+
+  <ul id="lista-produtos"></ul>
+
+  <script>
+    const ids = [
+      "MLB1000155201", "MLB1100808857", "MLB1102934565", "MLB1104449106", "MLB1106574362",
+      "MLB1109597357", "MLB1118161279", "MLB1150211074", "MLB1231251902", "MLB1274275349",
+      "MLB1322198007", "MLB1333525033", "MLB1333526004", "MLB1336180718", "MLB1345964491",
+      "MLB1354140095", "MLB1356737566", "MLB1364658589", "MLB1367745033", "MLB1373774209",
+      "MLB1385880235", "MLB1466286102", "MLB1690732834", "MLB1714192808", "MLB1744516070",
+      "MLB1744556106", "MLB1744583076", "MLB1745310586", "MLB1778063333", "MLB1778116317",
+      "MLB1779098357", "MLB1787235766", "MLB1789678173", "MLB1789680854", "MLB1791303772",
+      "MLB1911949538", "MLB2016874698", "MLB2041387829", "MLB2047629198", "MLB2054112902",
+      "MLB2094383240", "MLB2115135371", "MLB2123539935", "MLB2162435461", "MLB2198315690",
+      "MLB2216284767", "MLB2625335062", "MLB2632051361", "MLB2636228863", "MLB2659282953",
+      "MLB2704164960", "MLB2743317508", "MLB2781200660", "MLB3073779222", "MLB3265519850",
+      "MLB3343553437", "MLB3450664709", "MLB3494602831", "MLB3529526205", "MLB3599191925",
+      "MLB3641796913", "MLB3661025348", "MLB3669347959", "MLB3692156547", "MLB3694114145",
+      "MLB3698716907", "MLB3709129972", "MLB3715119667", "MLB3724812790", "MLB3771472565",
+      "MLB3775535307", "MLB3782053541", "MLB3785143453", "MLB3786324705", "MLB3805868181",
+      "MLB3838475723", "MLB3841003841", "MLB3871328057", "MLB3887686547", "MLB3891427243",
+      "MLB3906991773", "MLB3908309419", "MLB3919338435", "MLB3954646139", "MLB3955539262",
+      "MLB3962843195", "MLB3966909455", "MLB4007204323", "MLB4008524889", "MLB4014891571",
+      "MLB4016814371", "MLB4035776847", "MLB4037014301", "MLB4063764086", "MLB4096304179",
+      "MLB4102977961", "MLB4113235631", "MLB4121447397", "MLB4138855071", "MLB4140667680",
+      "MLB4285619472", "MLB4398244770", "MLB4495538816", "MLB4523122216", "MLB4586875376",
+      "MLB4629496064", "MLB4648765152", "MLB4694111498", "MLB4810596612", "MLB4844885558",
+      "MLB4870417960", "MLB4918525584", "MLB4980025646", "MLB4998050432", "MLB5020177998",
+      "MLB5044510852", "MLB5053048916", "MLB5128078588", "MLB5181163280", "MLB5192815872",
+      "MLB5254905780", "MLB5259401572", "MLB5295619262", "MLB5295765442", "MLB5300186310",
+      "MLB5300753778", "MLB5318836494", "MLB5349290952", "MLB5354169294", "MLB5372006310",
+      "MLB5504522736", "MLB5509998272", "MLB5528157956", "MLB5546065960", "MLB5654065604",
+      "MLB5671145714", "MLB795842523", "MLB867591600", "MLB914142839", "MLB917853568",
+      "MLB983144014", "MLB984275092"
+    ];
+
+    const lista = document.getElementById('lista-produtos');
+
+    async function carregarProdutos() {
+      for (const id of ids) {
+        try {
+          const token = 'APP_USR-7974364353720865-092214-70cff009c57342b6dc1e9d7c14ba1d1f-203163547';
+          const resp = await fetch(`https://api.mercadolibre.com/items/${id}?access_token=${token}`);
+          const dados = await resp.json();
+
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.textContent = dados.title;
+          a.href = dados.permalink;
+          a.target = "_blank";
+          li.appendChild(a);
+          lista.appendChild(li);
+        } catch (erro) {
+          console.error('Erro ao buscar', id, erro);
+        }
+      }
+    }
+
+    carregarProdutos();
+  </script>
 </body>
 </html>
